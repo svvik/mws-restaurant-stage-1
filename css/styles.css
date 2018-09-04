@@ -5,49 +5,67 @@
   box-sizing: border-box;
 }
 
-body,td,th,p{
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10pt;
-	color: #333;
-	line-height: 1.5;
+body,
+td,
+th,
+p {
+  font: 10pt/1.5 Arial, Helvetica, sans-serif;
+  color: #333;
 }
 
 body {
-	background-color: #fdfdfd;
-	margin: 0;
-	position:relative;
+  background-color: #fdfdfd;
+  margin: 0;
+  position: relative;
 }
 
-ul, li {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10pt;
-	color: #333;
+ul,
+li {
+  font: 10pt Arial, Helvetica, sans-serif;
+  color: #333;
 }
 
 a {
-	color: orange;
-	text-decoration: none;
+  color: orange;
+  text-decoration: none;
 }
 
-a:hover, a:focus {
-	color: #3397db;
-	text-decoration: none;
+a:hover,
+a:focus {
+  color: #3397db;
+  text-decoration: none;
 }
 
-a img{
-	border: none 0 #fff;
+a img {
+  border: none 0 #fff;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 0 20px;
 }
 
-article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
-#maincontent {
+#main-content {
   background-color: #f3f3f3;
   min-height: 100%;
 }
@@ -67,9 +85,9 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 nav {
   width: 100%;
   height: 4em;
-  padding-top: 1em;
+  padding: 1em 0 0 0;
   background-color: #252831;
-  text-align:center;
+  text-align: center;
 }
 
 nav h1 {
@@ -95,26 +113,26 @@ nav h1 a {
 
 /* Display list items side by side */
 #breadcrumb li {
-    display: inline;
+  display: inline;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
-#breadcrumb li+li:before {
-    padding: 8px;
-    color: black;
-    content: "/\00a0";
+#breadcrumb li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
 }
 
 /* Add a color to all links inside the list */
 #breadcrumb li a {
-    color: #0275d8;
-    text-decoration: none;
+  color: #0275d8;
+  text-decoration: none;
 }
 
 /* Add a color on mouse-over */
 #breadcrumb li a:hover {
-    color: #01447e;
-    text-decoration: underline;
+  color: #01447e;
+  text-decoration: underline;
 }
 
 /* ====================== Map ====================== */
@@ -145,8 +163,7 @@ nav h1 a {
 .filter-options select {
   background-color: white;
   border: 1px solid #fff;
-  font-family: Arial,sans-serif;
-  font-size: 11pt;
+  font: 11pt Arial, sans-serif;
   height: 35px;
   letter-spacing: 0;
   margin: 10px;
@@ -167,7 +184,7 @@ nav h1 a {
 #restaurants-list li {
   background-color: #fff;
   border: 2px solid #ccc;
-  font-family: Arial,sans-serif;
+  font-family: Arial, sans-serif;
   display: inline-block;
   margin: 1em;
   text-align: center;
@@ -181,18 +198,15 @@ nav h1 a {
   background-color: transparent;
   display: block;
   margin: 0;
-  padding-top: 1em;
+  padding: 1em 0 0 0;
   width: 100%;
   height: auto;
 }
 
 #restaurants-list li h1 {
   color: #f18200;
-  font-family: Arial,sans-serif;
-  font-size: 1em;
-  font-weight: 200;
+  font: 200 1em/1.3 Arial,sans-serif;
   letter-spacing: 0;
-  line-height: 1.3;
   margin: 20px 0 10px;
   text-transform: uppercase;
   white-space: nowrap;
@@ -249,17 +263,14 @@ nav h1 a {
 
 #restaurant-name {
   color: #f18200;
-  font-family: Arial,sans-serif;
-  font-size: 20pt;
-  font-weight: 200;
+  font: 200 20pt/1.1 Arial, sans-serif;
   letter-spacing: 0;
   margin: 15px 0 30px;
   text-transform: uppercase;
-  line-height: 1.1;
 }
 
 #restaurant-img {
-	width: 90%;
+  width: 90%;
 }
 
 #restaurant-address {
@@ -277,7 +288,7 @@ nav h1 a {
   padding: 2px 0;
   text-align: center;
   text-transform: uppercase;
-	width: 90%;
+  width: 90%;
 }
 
 #restaurant-container {
@@ -303,7 +314,7 @@ nav h1 a {
   font-size: 24pt;
   font-weight: 300;
   letter-spacing: -1px;
-  padding-bottom: 1pt;
+  padding: 0 0 1pt 0;
 }
 
 #reviews-list {
@@ -369,7 +380,6 @@ nav h1 a {
   display: inline-block;
 }
 
-
 /*media*/
 
 @media (max-width: 1366px) {
@@ -428,7 +438,7 @@ nav h1 a {
     width: 100%;
     position: relative;
     height: 250px;
-    padding-top: 3.75em;
+    padding: 3.75em 0 0 0;
     z-index: 500;
   }
 
@@ -458,7 +468,7 @@ nav h1 a {
     font-size: 24pt;
     font-weight: 300;
     letter-spacing: -1px;
-    padding-bottom: 1pt;
+    padding: 0 0 1pt 0;
   }
 
 }
@@ -512,7 +522,7 @@ nav h1 a {
     width: 100%;
     position: relative;
     height: 250px;
-    padding-top: 3.75em;
+    padding: 3.75em 0 0 0;
     z-index: 500;
   }
 
@@ -542,7 +552,7 @@ nav h1 a {
     font-size: 24pt;
     font-weight: 300;
     letter-spacing: -1px;
-    padding-bottom: 1pt;
+    padding: 0 0 1pt 0;
   }
 
 }
